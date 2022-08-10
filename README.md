@@ -1,4 +1,4 @@
-#Conway's Game of Life  
+# Conway's Game of Life  
 
 This repository contains oll the files from the Programing II practice.
 

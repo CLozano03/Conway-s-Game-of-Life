@@ -35,7 +35,7 @@ public class Life {
      */
     private static void canvasInit() {
         canvas.enableDoubleBuffering();
-        canvas.setCanvasSize(CANVAS_SIZE, (int)(CANVAS_SIZE /*  + 0.9*CANVAS_SIZE */ ));
+        canvas.setCanvasSize(CANVAS_SIZE, (int)(CANVAS_SIZE  ));
         canvas.setXscale(0, gen.size());
         canvas.setYscale(gen.size(), -10);
         /**
@@ -54,40 +54,6 @@ public class Life {
         setInstructions();
         canvas.show();
     }
-
-
-    /* public static void setupMenu(){
-        
-        canvas.clear(Draw.BLACK);
-        Life.canvas.setFont(new Font("FuenteTitulo", Font.BOLD, 25));
-        
-        double center = CANVAS_SIZE/2;
-        
-
-        //Title
-        double titleY = CANVAS_SIZE - 3*divisionY;
-        
-        canvas.setPenColor(Draw.BOOK_BLUE);
-        canvas.filledRectangle(CANVAS_SIZE/2, titleY - divisionY, CANVAS_SIZE, divisionY*3);
-        canvas.setPenColor(Draw.BLACK);
-        canvas.text(center, titleY+ divisionY/2, "JUEGO DE LA VIDA");
-        canvas.text(center, titleY - divisionY , "BY: CESAR LOZANO");
-
-
-        //Instructions
-
-        canvas.setPenColor(Draw.WHITE);
-        canvas.text(center, center + 2*divisionY, "JUEGO DE LA VIDA");
-        canvas.text(center, center + divisionY , "BY: CESAR LOZANO");
-        canvas.text(center, center, "JUEGO DE LA VIDA");
-        canvas.text(center, center - divisionY , "BY: CESAR LOZANO");
-        canvas.text(center, center - 2*divisionY, "JUEGO DE LA VIDA");
-
-
-
-        canvas.show();
-    }
- */
 
     public static void play() {
 
@@ -113,7 +79,6 @@ public class Life {
         }
     }
 
-
     private static void forwards(boolean up) {
         canvas.clear(Draw.BLACK);
         
@@ -129,7 +94,6 @@ public class Life {
         canvas.show();
 
     }
-
 
     private static void setInstructions() {
 

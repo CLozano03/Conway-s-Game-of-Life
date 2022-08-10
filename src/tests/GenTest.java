@@ -1,8 +1,7 @@
 package tests;
 
 /**
- * Responsabilidades:
- * - Probar la clase Gen mediante un GUI sencillo.
+ * Checking the class through an easy GUI
  */
 import stdlib.*;
 import gens.*;
